@@ -1,4 +1,4 @@
-import { MaxWidthWrapper } from '@/components'
+import { MaxWidthWrapper, Phone } from '@/components'
 import { Check, Star } from 'lucide-react'
 import Image from 'next/image'
 
@@ -10,7 +10,13 @@ export default function Home() {
           <div className='col-span-2 px-6 lg:px-0 lg:pt-4'>
             <div className='relative mx-auto text-center lg:text-left flex flex-col items-center lg:items-start'>
               <div className='absolute w-28 left-0 -top-20 hidden lg:block'>
-                <Image src={'/snake-1.png'} alt='logo-store' width={50} height={50} />
+                <Image
+                  src={'/snake-1.png'}
+                  alt='logo-store'
+                  width={150}
+                  height={150}
+                  className='w-28'
+                />
               </div>
               <h1 className='relative tracking-tight w-fit text-balance mt-16 font-bold !leading-tight text-gray-900 text-5xl md:text-6xl lg:text-7xl'>
                 Your image on a <span className='bg-green-600 px-2 text-white'>Custom</span> Phone
@@ -60,6 +66,25 @@ export default function Home() {
                   </p>
                 </div>
               </div>
+            </div>
+          </div>
+          <div className='col-span-full lg:col-span-1 w-full flex justify-center px-8 sm:px-16  md:px-0 mt-32 lg:mx-0 lg:mt-20 h-fit  '>
+            <div className='relative md:max-w-xl'>
+              <Image
+                src={'/your-image.png'}
+                width={100}
+                height={100}
+                alt='hero'
+                className='absolute w-40 lg:w-52 left-56 -top-20 select-none hidden sm:block lg:hidden xl:block'
+              />
+              <Image
+                width={100}
+                height={100}
+                alt='hero'
+                src={'/line.png'}
+                className='absolute w-20 -left-6 -bottom-6 select-none'
+              />
+              <Phone className='w-64' imgSrc='/testimonials/1.jpg' />
             </div>
           </div>
         </MaxWidthWrapper>
