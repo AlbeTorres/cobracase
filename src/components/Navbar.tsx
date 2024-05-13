@@ -50,7 +50,7 @@ export const Navbar = () => {
             ) : (
               <>
                 <Link
-                  href={'/api/auth/register'}
+                  href={'/sign-up'}
                   className={buttonVariants({
                     size: 'sm',
                     variant: 'ghost',
@@ -59,7 +59,7 @@ export const Navbar = () => {
                   Sing up
                 </Link>
                 <Link
-                  href={'/api/auth/login'}
+                  href={'/sign-in'}
                   className={buttonVariants({
                     size: 'sm',
                     variant: 'ghost',

@@ -1,4 +1,5 @@
 import { MaxWidthWrapper, Phone } from '@/components'
+import { UserButton } from '@clerk/nextjs'
 import { Check, Star } from 'lucide-react'
 import Image from 'next/image'
 
@@ -87,6 +88,7 @@ export default function Home() {
               <Phone className='w-64' imgSrc='/testimonials/1.jpg' />
             </div>
           </div>
+          <UserButton afterSignOutUrl='/' />
         </MaxWidthWrapper>
       </section>
     </main>
